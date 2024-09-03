@@ -15,7 +15,7 @@ time = st.number_input('Time', value=12)  # Removed min_value and max_value
 
 # Example input processing (adjust as needed based on your feature setup)
 # Convert input into the right shape for the model
-input_features = np.array([[year, week, time]])  # Adjust based on your model's requirements
+input_features = np.array([[year,location, week, time]])  # Adjust based on your model's requirements
 
 # Reshape to match model input shape
 input_features = input_features.reshape((input_features.shape[0], 1, input_features.shape[1]))
